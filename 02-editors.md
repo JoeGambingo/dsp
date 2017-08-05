@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Since I'm a novice, I liked nano the best because they shortcuts are included. But I have heard good things about emacs from a lot of pros, so I'd like to learn it.
 
 --
 
@@ -89,6 +89,7 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have used Sublime for years and really like it. I am going to check out Atom. However, there are so many options and I'm more interested in learning what to code than what to code in.
+
 
  
