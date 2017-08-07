@@ -43,13 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > `ls`  list directory
-> > `ls -a`  Include directory entries whose names begin with a dot (‘.’)
-> > `ls -l`  List in long format: the following information is displayed for each file: mode, number of links, owner, group, size in bytes, time of last modification (“mmm dd HH:MM”), and the pathname.
-> > `ls -lh`  List in long format, print sizes in human readable format (e.g., 1K 234M 2G)
-> > `ls -lah`  The `a` include directories whose names begin with a '.'
-> > `ls -t`  Sort by time modified
-> > `ls -Glp` `-G` Don't print group names; `l` long format; `p` include a slash in directory path names, useful for visually separating directories from files
+> > * `ls`  list directory
+> > * `ls -a`  Include directory entries whose names begin with a dot (‘.’)
+> > * `ls -l`  List in long format: the following information is displayed for each file: mode, number of links, owner, group, size in bytes, time of last modification (“mmm dd HH:MM”), and the pathname.
+> > * `ls -lh`  List in long format, print sizes in human readable format (e.g., 1K 234M 2G)
+> > * `ls -lah`  The `a` include directories whose names begin with a '.'
+> > * `ls -t`  Sort by time modified
+> > * `ls -Glp` `-G` Don't print group names; `l` long format; `p` include a slash in directory path names, useful for visually separating directories from files
 
 ---
 
