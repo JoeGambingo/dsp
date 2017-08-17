@@ -1,6 +1,12 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+# J. Gambino
+# Metis Pre-work
+# 8-16-2017
+
+import re
+import math
 
 def donuts(count):
     """
@@ -18,8 +24,18 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
 
+    if count < 10:
+        print('Number of donuts: ', count)
+    else:
+        print('Number of donuts: many')
+
+# Test donuts()
+# donuts(4)
+# donuts(9)
+# donuts(10)
+# donuts(99)
 
 def both_ends(s):
     """
@@ -37,7 +53,19 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    if len(s) < 2:
+        string =  ''
+    else:
+        string =  s[0:2] + s[-2::]
+    print(string)
+
+# Test both_ends()
+# both_ends('spring')
+# both_ends('Hello')
+# both_ends('a')
+# both_ends('xyz')
 
 
 def fix_start(s):
@@ -56,7 +84,15 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    print(s[0] + s[1::].replace(s[0],'*'))
+
+# Test fix_start()
+# fix_start('babble')
+# fix_start('aardvark')
+# fix_start('google')
+# fix_start('donut')
 
 
 def mix_up(a, b):
@@ -74,7 +110,16 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    string = b[0:2] + a[2::] + ' ' + a[0:2] + b[2::]
+    print(string)
+
+# Test mix_up()
+# mix_up('mix', 'pod')
+# mix_up('dog', 'dinner')
+# mix_up('gnash', 'sport')
+# mix_up('pezzy', 'firm')
 
 
 def verbing(s):
@@ -91,7 +136,20 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    if len(s) < 3:
+        print(s)
+    elif s[-3::] != 'ing':
+        print(s + 'ing')
+    else:
+        print(s + 'ly')
+
+# Test verbing()
+#verbing('hail')
+#verbing('swiming')
+#verbing('do')
+
 
 
 def not_bad(s):
@@ -111,7 +169,16 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    pattern = re.compile('not.*bad')
+    print(re.sub(pattern, 'good', s))
+
+# Test not_bad()
+#not_bad('This movie is not so bad')
+#not_bad('This dinner is not that bad!')
+#not_bad('This tea is not hot')
+#not_bad("It's bad yet not")
 
 
 def front_back(a, b):
@@ -130,4 +197,20 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    def string_split(string):
+        length = len(string)
+        split = (string[0:math.ceil(length/2)], string[math.ceil(length/2)::])
+
+        return split
+
+    (a_front, a_back) = string_split(a)
+    (b_front, b_back) = string_split(b)
+
+    print(a_front+b_front+a_back+b_back)
+
+# Test front_back()
+#front_back('abcd', 'xy')
+#front_back('abcde', 'xyz')
+#front_back('Kitten', 'Donut')
