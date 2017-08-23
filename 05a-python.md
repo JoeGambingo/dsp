@@ -51,11 +51,37 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> A list comprehension
+>> A list comprehension is method of building a sequence much like sequences are described in mathematics. The basic syntax of a list is: `[expression for item in list if conditional]`
 
->> The basic syntax of a list is: `[expression for item in list if conditional]`
+>> The following example, adapted from the link below, demonstrates how list comprehensions can acheive the same results as `map` and `filter` in much more readable manner:
+```
+>> words = 'The quick brown fox jumps over the lazy dog'.split()
+>> print(words)
+['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 
->>
+>> test = [[w.upper(), w.lower(), len(w)] for w in words if len(w) > 3]
+>> for i in test:
+      print(i)
+['QUICK', 'quick', 5]
+['BROWN', 'brown', 5]
+['JUMPS', 'jumps', 5]
+['OVER', 'over', 4]
+['LAZY', 'lazy', 4]
+
+>> stuff = map(lambda w: [w.upper(), w.lower(), len(w)], words)
+>> stuff = list(filter(lambda x: x[2] > 3, stuff))
+>> for i in test:
+      print(i)
+['QUICK', 'quick', 5]
+['BROWN', 'brown', 5]
+['JUMPS', 'jumps', 5]
+['OVER', 'over', 4]
+['LAZY', 'lazy', 4]
+```
+Source: http://www.secnetix.de/olli/Python/list_comprehensions.hawk
+
+
+
 
 ---
 
