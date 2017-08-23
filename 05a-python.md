@@ -1,4 +1,4 @@
-# Learn Python
+ # Learn Python
 
 Read Allen Downey's [Think Python](http://www.greenteapress.com/thinkpython/) for getting up to speed with Python 2.7 and computer science topics. It's completely available online, or you can buy a physical copy if you would like.
 
@@ -34,7 +34,16 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `Lambdas` are anonymous functions (functions not formerly declared with a name) that are often written for a one-off purpose. They are useful for passing one function through another function.
+
+>>Using a `lambda` as the key in the `sorted` function, would allow a list to be sorted by a function rather than a static key. For an example, see the snippet included below, from Stack Overflow
+
+```
+>> to_be_sorted = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+>> sorted(to_be_sorted, key = lambda x: abs(5-x))
+
+[5, 4, 6, 3, 7, 2, 8, 1, 9]
+```
 
 ---
 
@@ -42,7 +51,11 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> A list comprehension
+
+>> The basic syntax of a list is: `[expression for item in list if conditional]`
+
+>>
 
 ---
 
@@ -91,8 +104,3 @@ Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ### Q8. Parsing
 Write a script as indicated (using the football data) in [q8_parsing.py](python/q8_parsing.py)
-
-
-
-
-

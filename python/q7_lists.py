@@ -17,6 +17,8 @@ def match_ends(words):
     """
     raise NotImplementedError
 
+    # I think I can use a lamda for this.
+
 
 def front_x(words):
     """
