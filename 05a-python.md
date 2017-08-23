@@ -54,7 +54,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> A list comprehension is method of building a sequence much like sequences are described in mathematics. The basic syntax of a list is: `[expression for item in list if conditional]`
 
 >> The following example, adapted from the link below, demonstrates how list comprehensions can acheive the same results as `map` and `filter` in much more readable manner:
-```
+>>```
 >> words = 'The quick brown fox jumps over the lazy dog'.split()
 >> print(words)
 ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
@@ -78,7 +78,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ['OVER', 'over', 4]
 ['LAZY', 'lazy', 4]
 ```
-Source: http://www.secnetix.de/olli/Python/list_comprehensions.hawk
+>> Source: http://www.secnetix.de/olli/Python/list_comprehensions.hawk
 
 
 
