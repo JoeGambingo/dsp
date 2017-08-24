@@ -15,9 +15,16 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    #raise NotImplementedError
 
-    # I think I can use a lamda for this.
+    # List comprehension
+    words_filtered = [x for x in words if len(x) > 1 and x[0] == x[-1]]
+    return len(words_filtered)
+
+# Test match_ends()
+#print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']))
+#print(match_ends(['', 'x', 'xy', 'xyx', 'xx']))
+#print(match_ends(['aaa', 'be', 'abc', 'hello']))
 
 
 def front_x(words):
@@ -34,7 +41,16 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+    x_list = sorted([word for word in words if word[0] == 'x'])
+    non_x_list = sorted([word for word in words if word[0] != 'x'])
+    return x_list + non_x_list
+
+# Test front_x()
+#print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']))
+#print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']))
+#print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']))
 
 
 def sort_last(tuples):
@@ -51,7 +67,13 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    return sorted(tuples, key = lambda x: x[-1])
+
+# test sort_last()
+#print(sort_last([(1, 3), (3, 2), (2, 1)]))
+#print(sort_last([(2, 3), (1, 2), (3, 1)]))
+#print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]))
 
 
 def remove_adjacent(nums):
@@ -70,7 +92,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    #Sets cannot contain duplicate values
+    return list(set(nums))
+
+# Test remove_adjacent()
+#print(remove_adjacent([1, 2, 2, 3]))
+#print(remove_adjacent([2, 2, 3, 3, 3]))
+#print(remove_adjacent([3, 2, 3, 3, 3]))
+#print(remove_adjacent([]))
 
 
 def linear_merge(list1, list2):
@@ -87,4 +117,9 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    return sorted(list1 + list2)
+
+#print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']))
+#print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']))
+#print(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']))
