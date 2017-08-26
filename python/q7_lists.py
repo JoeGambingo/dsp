@@ -68,7 +68,7 @@ def sort_last(tuples):
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
     #raise NotImplementedError
-    return sorted(tuples, key = lambda x: x[-1])
+    return sort2ed(tuples, key = lambda x: x[-1])
 
 # test sort_last()
 #print(sort_last([(1, 3), (3, 2), (2, 1)]))

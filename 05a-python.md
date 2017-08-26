@@ -87,7 +87,22 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 {2, 4, 6, 8, 10}
 ```
 
->> Dictionary comprehensions are similar and take the form `{key: value for (key, value) in iterable}'
+>> Dictionary comprehensions are similar and take the form `{key: value for (key, value) in iterable}'. See this example from Stack Overflow:
+
+```
+>> {n: n**2 for n in range(0,5)}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+```
+>> Source: https://stackoverflow.com/questions/14507591/python-dictionary-comprehension
+
+>> A common approach is to form a dictionary from two equal length lists, matching key and value for the elements at the same position in each list. The `zip` function creates tuples of these position matched pairs.
+
+```
+>> squares = [x**2 for x in range(0,5)]
+>> cubes = [x**3 for x in range(0,5)]
+>> {k:v for (k,v) in zip(squares, cubes)}
+{0: 0, 1: 1, 4: 8, 9: 27, 16: 64}
+```
 
 
 
