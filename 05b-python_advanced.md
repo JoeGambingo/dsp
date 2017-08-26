@@ -21,9 +21,9 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 >> There are 9 unique degrees among the faculty. They are:
 >> -'BSEd': 1,
->> -'JD': 1,
->> -'MA': 1,
->> -'MD': 1,
+-'JD': 1,
+-'MA': 1,
+-'MD': 1,
 >> -'MPH': 2,
 >> -'MS': 2,
 >> -'PhD': 31,
