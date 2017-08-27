@@ -34,9 +34,9 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
 >> There are 3 unique titles among the faculty. They are:  
-*'Assistant Professor of Biostatistics': 12,  
-*'Associate Professor of Biostatistics': 12,  
--'Professor of Biostatistics': 13  
+'Assistant Professor of Biostatistics': 12,  
+'Associate Professor of Biostatistics': 12,  
+'Professor of Biostatistics': 13  
 
 
 #### Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -115,7 +115,13 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 Print the first 3 key and value pairs of the dictionary:
 
 ```
-Place code here after you've cleaned the values
+'Bellamy': [['Sc.D.',
+   'Associate Professor of Biostatistics',
+   'bellamys@mail.med.upenn.edu']],
+ 'Bilker': [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']],
+ 'Bryan': [['Ph.D.',
+   'Assistant Professor of Biostatistics',
+   'bryanma@upenn.edu']],...
 ```
 
 #### Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
