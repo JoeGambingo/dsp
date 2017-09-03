@@ -4,6 +4,9 @@
 Below is my code.
 
 ```
+import thinkstats2
+import random
+
 random_sample = []
 for ii in range(0, 1000):
     random_sample.append(random.random())
