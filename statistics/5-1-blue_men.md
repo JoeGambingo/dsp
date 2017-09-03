@@ -4,6 +4,8 @@
 Below is my code.
 
 ```
+import thinkstats2
+
 # Behavioral Risk Factor Surveillance System
 import brfss
 df = brfss.ReadBrfss()
