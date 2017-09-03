@@ -1,6 +1,6 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
->> 47.7% of U.S. men could be in Blue Man Group (but not me :sad:).  
+>> 47.7% of U.S. men could be in Blue Man Group, but not me :(  
 Below is my code.
 
 ```
