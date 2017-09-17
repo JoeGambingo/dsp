@@ -111,7 +111,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I found two posts on Stack Overflow that helped me understand how frequentist and Bayesian statistics compare. The [first](https://stats.stackexchange.com/questions/31867/bayesian-vs-frequentist-interpretations-of-probability) is math heavy and the [second](https://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english) is not.
+>>  
+>> As I understand so far, Bayesian statistics seems to be an evolution of frequentist statistics. Frequentists statistics measures the occurence of events and only the occurence of events. It uses raw data collection to calculate probabilities. Baysian statistics builds on that and incorporates quantafiable reasoning based on prior knowledge. The criticism of the Bayesian approac is that it can be too subjective. But I belive that subjectivity can be ruled out or verified through the scientific process. If different researches approach the same data with different prior knowledge and reach similar conclusions, those conclusions have been verified.
 
 ---
 
