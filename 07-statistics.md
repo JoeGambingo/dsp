@@ -88,10 +88,10 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> The probability that Elvis had an identical twin brother given that he had a twin sibling is about 30%. See my code below:  
 
-Hypothesis: Elvis Preseley had an identical twin.  
-Data: Elvis had a twin.  
+>> Hypothesis: Elvis Preseley had an identical twin.  
+>> Data: Elvis had a twin.  
   
-P(had identical twin | had a twin) = P(had twin | had identical twin) * P(had an identical twin) / P(had a twin)  
+>> P(had identical twin | had a twin) = P(had twin | had identical twin) * P(had an identical twin) / P(had a twin)  
 
 ```
 >>p_fraternal = 1/125
